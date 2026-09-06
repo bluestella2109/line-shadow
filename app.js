@@ -1,5 +1,5 @@
 // --- Supabase Setup ---
-const SUPABASE_URL = "https://dyifdwlxzevrjvpzezry.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://dyifdwlxzevrjvpzezry.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5aWZkd2x4emV2cmp2cHplenJ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2NDc1NzYsImV4cCI6MjEwNDIyMzU3Nn0.ukQj4tZnOUTfuUN2pDFMnlbr5AC_2-wEmMd_iyh3uwg";
 const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
