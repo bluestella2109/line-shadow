@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE & SHADOW - Online Cyber Battle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="LINE & SHADOW">LINE & SHADOW</h1>
+            <p class="subtitle">REAL-TIME CYBER TERRITORY BATTLE</p>
+        </header>
+
+        <section id="lobby" class="panel">
+            <h2>ROOM SELECT</h2>
+            <div class="input-group">
+                <input type="text" id="room-id" placeholder="Enter Room Code (e.g. 1234)" maxlength="8">
+                <button id="join-btn" class="cyber-btn">JOIN MATCH</button>
+            </div>
+            <p id="status-msg">Enter a room code to connect...</p>
+        </section>
+
+        <section id="game-container" class="panel hidden">
+            <div class="scoreboard">
+                <div class="player-card p1">
+                    <span class="p-name">PLAYER 1 (BLUE)</span>
+                    <span id="score-p1" class="score">1</span>
+                </div>
+                <div class="turn-indicator" id="turn-display">WAITING...</div>
+                <div class="player-card p2">
+                    <span class="p-name">PLAYER 2 (RED)</span>
+                    <span id="score-p2" class="score">1</span>
+                </div>
+            </div>
+
+            <div id="board" class="cyber-board"></div>
+
+            <div class="controls-hint">
+                <p>Click adjacent valid cell to move & draw light-line (1 to 3 steps)</p>
+                <button id="end-turn-btn" class="cyber-btn action-btn" disabled>END TURN</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
